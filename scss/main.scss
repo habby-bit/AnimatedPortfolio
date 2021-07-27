@@ -21,6 +21,7 @@ h2,
 h3 {
     margin: 0;
     font-weight: 400;
+    z-index: -1;
 
     &.lg-heading {
         font-size: 6rem;
@@ -70,6 +71,12 @@ main {
 
         h1 {
             margin-top: 20vh;
+        }
+
+        &.show {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s 0.3s, opacity 0.3s;
         }
     }
 }
