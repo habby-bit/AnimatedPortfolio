@@ -1,13 +1,20 @@
 // XL Screens - Widescreens
 @include mediaXl {
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 // LG Screens - Desktops & Laptops
 @include mediaLg {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 // MD Screens - Tablets & Small Laptops
 @include mediaMd {
+    // Home Page
     #home {
         align-items: center;
         text-align: center;
@@ -18,6 +25,7 @@
         margin-bottom: 1rem;
     }
 
+    // Menu
     ul.menu-nav,
     div.menu-branding {
         float: none;
@@ -41,6 +49,12 @@
         font-size: 24px;
     }
 
+    // About Me Page
+    #about {
+        align-items: center;
+        text-align: center;
+    }
+
     .about-info {
         grid-template-areas:
             "bioimage"
@@ -49,6 +63,11 @@
             "job2"
             "job3";
         grid-template-columns: 1fr;
+    }
+
+    // Projects
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -63,5 +82,9 @@
         h1 {
             margin-top: 3vh;
         }
+    }
+    // Projects
+    .projects {
+        grid-template-columns: 1fr;
     }
 }
