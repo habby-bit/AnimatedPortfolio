@@ -67,7 +67,10 @@ main {
         }
     }
 
-    &#home {
+    &#home,
+    &#about,
+    &#work,
+    &#contact {
         overflow: hidden;
 
         h1 {
@@ -75,9 +78,7 @@ main {
         }
 
         &.show {
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility 0s 0.3s, opacity 0.3s;
+            opacity: 0.1;
         }
     }
 }
@@ -150,6 +151,11 @@ main {
     align-items: center;
     margin-top: 1rem;
 
+    .fa-envelope,
+    .fa-phone {
+        padding-right: 0.9rem;
+    }
+
     div {
         font-size: 2rem;
         border: 3px #fff solid;
@@ -161,6 +167,10 @@ main {
             padding: 0.8rem 1.5rem;
             background: $secondary-color;
             color: $primary-color;
+            cursor: pointer;
+
+            .email,
+            .phone,
             span {
                 color: $primary-color;
             }
