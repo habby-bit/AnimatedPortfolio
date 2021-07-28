@@ -1,6 +1,5 @@
 @import "config";
 @import "menu";
-@import "mobile";
 
 * {
     box-sizing: border-box;
@@ -131,3 +130,5 @@ main {
     color: #fff;
     height: 60px;
 }
+
+@import "mobile";
