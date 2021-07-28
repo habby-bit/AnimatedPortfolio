@@ -1,0 +1,57 @@
+// XL Screens - Widescreens
+@include mediaXl {
+}
+
+// LG Screens - Desktops & Laptops
+@include mediaLg {
+}
+
+// MD Screens - Tablets & Small Laptops
+@include mediaMd {
+    #home {
+        align-items: center;
+        text-align: center;
+    }
+
+    .lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    ul.menu-nav,
+    div.menu-branding {
+        float: none;
+        width: 100%;
+        min-height: 0;
+    }
+
+    &.show {
+        transform: translate3d(0, 0, 0);
+    }
+
+    .menu-branding {
+        height: 40vh;
+        transform: translate3d(100%, 0, 0);
+        padding: 1.5rem;
+    }
+
+    .menu-nav {
+        height: 60vh;
+        transform: translate3d(-100%, 0, 0);
+        font-size: 24px;
+    }
+}
+
+// SM Screens - Smartphones
+@include mediaSm {
+    #home {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+            margin-top: 3vh;
+        }
+    }
+}
