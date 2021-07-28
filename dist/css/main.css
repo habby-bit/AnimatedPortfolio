@@ -236,7 +236,7 @@ main#home.show, main#about.show, main#work.show, main#contact.show {
 
 .about-info .bio-img {
   grid-area: bioimage;
-  width: 50%;
+  width: 80%;
   margin: auto;
   border-radius: 50%;
   border: #eece1a 3px solid;
