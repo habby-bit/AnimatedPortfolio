@@ -4,7 +4,7 @@ const menuBtn = document.querySelector('.menu-btn');
 const menuNav= document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
-const homeContent = document.querySelector('#home')
+const homeContent = document.querySelector('main')
 
 // Set Initial State of Menu
 let showMenu = false;
