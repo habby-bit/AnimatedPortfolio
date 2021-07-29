@@ -386,6 +386,12 @@ main#home.show, main#about.show, main#work.show, main#contact.show {
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
+  .menu-nav .nav-item {
+    transform: translate3d(-100%, 0, 0);
+  }
+  .menu-nav .nav-item.show {
+    transform: translate3d(0, 0, 0);
+  }
   #about {
     align-items: center;
     text-align: center;
