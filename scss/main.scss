@@ -74,7 +74,7 @@ main {
         overflow: hidden;
 
         h1 {
-            margin-top: 20vh;
+            margin-top: 5vh;
         }
 
         &.show {
@@ -126,23 +126,38 @@ main {
 // Projects
 .projects {
     display: grid;
-    grid-gap: 0.7rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.2rem;
+    grid-template-columns: repeat(2, 1fr);
 
-    img {
-        width: 100%;
-        border: #fff 3px solid;
+    .item {
+        @include resBox;
+        padding: 1.2rem;
+        margin: 0;
+
+        p {
+            font-size: 1rem;
+        }
 
         &:hover {
-            opacity: 0.5;
-            border-color: $secondary-color;
-            @include easeOut;
+            h6 {
+                color: #333;
+            }
+        }
+
+        h6 {
+            margin: 0;
+            padding-bottom: 0.7rem;
+        }
+
+        img {
+            width: 100%;
+            border: solid black 3px;
         }
     }
 }
 
 // Contact Page
-.boxes {
+.contactBoxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -153,52 +168,27 @@ main {
     .fa-phone {
         padding-right: 0.9rem;
     }
-
-    div {
-        font-size: 2rem;
-        border: 3px #fff solid;
-        padding: 1.5rem 2.5rem;
-        margin-bottom: 3rem;
-        @include easeOut;
-
-        &:hover {
-            padding: 0.8rem 1.5rem;
-            background: $secondary-color;
-            color: $primary-color;
-            cursor: pointer;
-
-            .email,
-            .phone,
-            span {
-                color: $primary-color;
-            }
-        }
+    .email,
+    .phone {
+        @include resBox;
+        cursor: pointer;
     }
 }
 
 // Button Styles
-.btn {
+.btn-dark {
     display: block;
     padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;
+    background: lighten($primary-color, 50);
+    color: black;
+    font-size: 1.1rem;
 
     &:hover {
-        background: $secondary-color;
-        color: $primary-color;
+        color: #fff;
+        background: black;
     }
-}
-
-.btn-dark {
-    @extend .btn;
-    background: darken($primary-color, 50);
-    color: #fff;
-}
-
-.btn-light {
-    @extend .btn;
-    background: lighten($primary-color, 50);
-    color: #333;
 }
 
 #main-footer {

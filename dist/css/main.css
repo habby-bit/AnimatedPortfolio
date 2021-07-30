@@ -220,7 +220,7 @@ main#home, main#about, main#work, main#contact {
 }
 
 main#home h1, main#about h1, main#work h1, main#contact h1 {
-  margin-top: 20vh;
+  margin-top: 5vh;
 }
 
 main#home.show, main#about.show, main#work.show, main#contact.show {
@@ -267,22 +267,45 @@ main#home.show, main#about.show, main#work.show, main#contact.show {
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.2rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.projects img {
-  width: 100%;
-  border: #fff 3px solid;
-}
-
-.projects img:hover {
-  opacity: 0.5;
-  border-color: #eece1a;
+.projects .item {
+  font-size: 2rem;
+  border: 3px #fff solid;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
   transition: all 0.5s ease-out;
+  padding: 1.2rem;
+  margin: 0;
 }
 
-.boxes {
+.projects .item:hover {
+  padding: 0.8rem 1.5rem;
+  background: #eece1a;
+  color: #444;
+}
+
+.projects .item p {
+  font-size: 1rem;
+}
+
+.projects .item:hover h6 {
+  color: #333;
+}
+
+.projects .item h6 {
+  margin: 0;
+  padding-bottom: 0.7rem;
+}
+
+.projects .item img {
+  width: 100%;
+  border: solid black 3px;
+}
+
+.contactBoxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -290,52 +313,41 @@ main#home.show, main#about.show, main#work.show, main#contact.show {
   margin-top: 1rem;
 }
 
-.boxes .fa-envelope,
-.boxes .fa-phone {
+.contactBoxes .fa-envelope,
+.contactBoxes .fa-phone {
   padding-right: 0.9rem;
 }
 
-.boxes div {
+.contactBoxes .email,
+.contactBoxes .phone {
   font-size: 2rem;
   border: 3px #fff solid;
   padding: 1.5rem 2.5rem;
   margin-bottom: 3rem;
   transition: all 0.5s ease-out;
-}
-
-.boxes div:hover {
-  padding: 0.8rem 1.5rem;
-  background: #eece1a;
-  color: #444;
   cursor: pointer;
 }
 
-.boxes div:hover .email,
-.boxes div:hover .phone,
-.boxes div:hover span {
-  color: #444;
-}
-
-.btn, .btn-dark, .btn-light {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
-}
-
-.btn:hover, .btn-dark:hover, .btn-light:hover {
+.contactBoxes .email:hover,
+.contactBoxes .phone:hover {
+  padding: 0.8rem 1.5rem;
   background: #eece1a;
   color: #444;
 }
 
 .btn-dark {
-  background: black;
-  color: #fff;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  background: #c4c4c4;
+  color: black;
+  font-size: 1.1rem;
 }
 
-.btn-light {
-  background: #c4c4c4;
-  color: #333;
+.btn-dark:hover {
+  color: #fff;
+  background: black;
 }
 
 #main-footer {
@@ -347,12 +359,6 @@ main#home.show, main#about.show, main#work.show, main#contact.show {
 }
 
 @media screen and (min-width: 1171px) {
-  .projects {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }

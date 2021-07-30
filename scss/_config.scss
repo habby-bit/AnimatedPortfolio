@@ -29,6 +29,21 @@ $background-opacity: 0.9;
     }
 }
 
+// Responsive Buttons
+@mixin resBox {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover {
+        padding: 0.8rem 1.5rem;
+        background: $secondary-color;
+        color: $primary-color;
+    }
+}
+
 // Media Query Mixins
 @mixin mediaSm {
     @media screen and (max-width: 500px) {
