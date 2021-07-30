@@ -120,6 +120,16 @@ main {
         background: lighten($primary-color, 5);
         padding: 1.5rem;
         border-bottom: $secondary-color 5px solid;
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        h6 {
+            font-size: 1rem;
+            margin: 0.7rem 0 2.2rem 0;
+        }
     }
 }
 
@@ -131,6 +141,7 @@ main {
 
     .item {
         @include resBox;
+        border-color: black;
         padding: 1.2rem;
         margin: 0;
 
@@ -138,10 +149,26 @@ main {
             font-size: 1rem;
         }
 
+        .testing {
+            width: 100%;
+            height: 250px;
+            background: url("../img/project1.jpg");
+        }
+
         &:hover {
             h6 {
                 color: #333;
             }
+
+            img {
+                border-color: black;
+            }
+
+            .testing {
+                background: url("../img/smallPortrait.png");
+            }
+
+            border-color: white;
         }
 
         h6 {
@@ -151,7 +178,7 @@ main {
 
         img {
             width: 100%;
-            border: solid black 3px;
+            border: solid white 3px;
         }
     }
 }
