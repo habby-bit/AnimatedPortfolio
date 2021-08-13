@@ -25,6 +25,7 @@ h3 {
 
     &.lg-heading {
         font-size: 6rem;
+        margin-top: 0;
     }
 
     &.sm-heading {
@@ -74,7 +75,7 @@ main {
         overflow: hidden;
 
         h1 {
-            margin-top: 5vh;
+            margin-bottom: 8vh;
         }
 
         &.show {
@@ -85,9 +86,12 @@ main {
 
 .about-info {
     display: grid;
-    grid-gap: 30px;
+    gap: 30px;
+    // row-gap: 2rem;
     grid-template-areas:
-        "bioimage bio bio"
+        "bioimage bio bio "
+        "resume bio bio"
+        "title title title"
         "job1 job2 job3";
     grid-template-columns: repeat(3, 1fr);
 
@@ -101,7 +105,20 @@ main {
 
     .bio {
         grid-area: bio;
-        font-size: 1rem;
+        font-size: 1.4rem;
+        margin-top: 2rem;
+    }
+
+    .resume {
+        grid-area: resume;
+        margin: auto;
+    }
+
+    .title {
+        grid-area: title;
+        margin-top: 3rem;
+        font-weight: 900;
+        font-size: 2rem;
     }
 
     .job-1 {
@@ -124,16 +141,38 @@ main {
         h3 {
             font-size: 1.4rem;
             font-weight: 700;
+            color: $secondary-color;
         }
 
         h6 {
             font-size: 1rem;
             margin: 0.7rem 0 2.2rem 0;
         }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li::before {
+            content: "\25AA";
+            color: $secondary-color;
+            font-size: 1.4rem;
+            display: inline-block;
+            width: 1.2rem;
+            margin-left: -1em;
+        }
     }
 }
 
 // Projects
+
+#work {
+    .sm-heading {
+        font-weight: 900;
+        font-size: 2rem;
+    }
+}
+
 .projects {
     display: grid;
     grid-gap: 2.2rem;
@@ -147,6 +186,10 @@ main {
 
         p {
             font-size: 1rem;
+
+            span {
+                color: $secondary-color;
+            }
         }
 
         &:hover {
@@ -162,20 +205,35 @@ main {
         h6 {
             margin: 0;
             padding-bottom: 0.7rem;
+            font-style: italic;
         }
 
-        img {
-            width: 100%;
-            border: solid black 3px;
-        }
+        // .pic {
+        // background: url("../dist/img/ActTwo.jpg");
+        // width: 100%;
+        // border: solid black 3px;
+        // height: 25%;
+        // }
     }
 }
 
 // Contact Page
+
+#contact {
+    .lg-heading {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 5rem;
+    }
+}
 .contactBoxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: start;
+    gap: 2rem;
     align-items: center;
     margin-top: 1rem;
 
@@ -193,17 +251,21 @@ main {
 // Button Styles
 .btn-dark {
     display: block;
-    padding: 0.5rem 1rem;
-    border: 0;
+    width: 15rem;
+    padding: 0.8rem 0.8rem;
+    border: 2px solid black;
     margin-bottom: 0.3rem;
     background: lighten($primary-color, 25);
-
+    font-weight: 900;
+    text-align: center;
     color: black;
     font-size: 1.1rem;
 
     &:hover {
         color: $secondary-color;
         background: black;
+
+        border-color: $secondary-color;
     }
 }
 
