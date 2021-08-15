@@ -84,10 +84,11 @@ main {
     }
 }
 
+// About Me
+
 .about-info {
     display: grid;
     gap: 30px;
-    // row-gap: 2rem;
     grid-template-areas:
         "bioimage bio bio "
         "resume bio bio"
@@ -106,7 +107,6 @@ main {
     .bio {
         grid-area: bio;
         font-size: 1.4rem;
-        margin-top: 2rem;
     }
 
     .resume {
@@ -161,6 +161,13 @@ main {
             width: 1.2rem;
             margin-left: -1em;
         }
+    }
+
+    #myBtn {
+        @include resBox;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 0.3rem;
     }
 }
 
@@ -275,6 +282,50 @@ main {
     background: darken($primary-color, 10);
     color: #fff;
     height: 60px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: black;
+    margin: 5% auto;
+    width: 75%;
+    height: 100%;
+}
+
+.resume-doc {
+    padding: 1rem 1rem 3.6rem 1rem;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* The Close Button */
+.close {
+    color: $secondary-color;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 @import "mobile";
