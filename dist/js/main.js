@@ -59,18 +59,3 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 };
-
-// $("#trigger").click(function () {
-//     $("#dialog").dialog();
-// });
-
-//   $("#trigger").click(function () {
-//       $("#dialog").dialog();
-//   });
-
-//   <a href="#" id="trigger">this link</a>
-// <div id="dialog" style="display:none">
-//     <div>
-//     <iframe src="yourpdffile.pdf"></iframe>
-//     </div>
-// </div>
