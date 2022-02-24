@@ -22,7 +22,7 @@ Below are some example images of the site!
 ## App
 
 Here is a link to the deployed website on GitHub Pages:
-[Animated Portfolio](https://habby-bit.github.io/HabbyO/)
+[Habby Olusesi](https://habby-bit.github.io/HabbyO/)
 
 ## Questions?
 
