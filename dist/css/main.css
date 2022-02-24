@@ -180,7 +180,8 @@ h2.sm-heading,
 h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background-color: #373737;
+  background-color: #3b3b3b;
+  border-radius: 3px;
 }
 
 a {
@@ -312,8 +313,9 @@ main#home.show, main#about.show, main#work.show, main#contact.show {
   font-size: 1.5rem;
   padding: 0.3rem;
   color: #fff;
-  background-color: none;
-  border: 1px black solid;
+  background-color: #44444400;
+  border: 2px black solid;
+  border-radius: 5px;
 }
 
 .about-info #myBtn:hover {
@@ -384,6 +386,8 @@ main#home.show, main#about.show, main#work.show, main#contact.show {
   margin-bottom: 3rem;
   transition: all 0.5s ease-out;
   border-color: black;
+  border-radius: 3px;
+  border-width: 2px;
   padding: 1.2rem;
   margin: 0;
 }
@@ -449,6 +453,7 @@ main#home.show, main#about.show, main#work.show, main#contact.show {
   margin-bottom: 3rem;
   transition: all 0.5s ease-out;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .contactBoxes .email:hover,
