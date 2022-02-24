@@ -180,7 +180,7 @@ h2.sm-heading,
 h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(73, 73, 73, 0.5);
+  background-color: #373737;
 }
 
 a {
@@ -304,17 +304,20 @@ main#home.show, main#about.show, main#work.show, main#contact.show {
 
 .about-info #myBtn {
   font-size: 2rem;
-  border: 3px #fff solid;
+  border: 1px #fff solid;
   padding: 1.5rem 2.5rem;
   margin-bottom: 3rem;
   transition: all 0.5s ease-out;
   cursor: pointer;
   font-size: 1.5rem;
   padding: 0.3rem;
+  color: #fff;
+  background-color: none;
+  border: 1px black solid;
 }
 
 .about-info #myBtn:hover {
-  padding: 0.8rem 1.5rem;
+  padding: 0.6rem 1.3rem;
   background: #eece1a;
   color: #444;
 }
@@ -376,7 +379,7 @@ main#home.show, main#about.show, main#work.show, main#contact.show {
 
 .projects .item {
   font-size: 2rem;
-  border: 3px #fff solid;
+  border: 1px #fff solid;
   padding: 1.5rem 2.5rem;
   margin-bottom: 3rem;
   transition: all 0.5s ease-out;
@@ -386,7 +389,7 @@ main#home.show, main#about.show, main#work.show, main#contact.show {
 }
 
 .projects .item:hover {
-  padding: 0.8rem 1.5rem;
+  padding: 0.6rem 1.3rem;
   background: #eece1a;
   color: #444;
 }
@@ -441,7 +444,7 @@ main#home.show, main#about.show, main#work.show, main#contact.show {
 .contactBoxes .email,
 .contactBoxes .phone {
   font-size: 2rem;
-  border: 3px #fff solid;
+  border: 1px #fff solid;
   padding: 1.5rem 2.5rem;
   margin-bottom: 3rem;
   transition: all 0.5s ease-out;
@@ -450,7 +453,7 @@ main#home.show, main#about.show, main#work.show, main#contact.show {
 
 .contactBoxes .email:hover,
 .contactBoxes .phone:hover {
-  padding: 0.8rem 1.5rem;
+  padding: 0.6rem 1.3rem;
   background: #eece1a;
   color: #444;
 }
